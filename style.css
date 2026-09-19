@@ -1,0 +1,181 @@
+/* CSS Box Shadow Generator: https://html-css-js.com/css/generator/box-shadow/
+
+W3Schools Lessons:
+- Transform Tool: https://www.w3schools.com/cssref/css3_pr_transform.php
+- CSS Position Property (for my CSS code that used absolute and relative): https://www.w3schools.com/CSSref/pr_class_position.php
+- How to add Favicons: https://www.w3schools.com/html/html_favicon.asp
+
+Logos: Created by me in https://www.photopea.com/
+
+Poppins Font: https://fonts.google.com/specimen/Poppins?query=poppins 
+Bagel BG Image: https://ph.pinterest.com/pin/362891682487523199/ */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+/* Formatting */
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url('Images/BG.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    width: 100vw;
+    height: 100vh;
+}
+
+
+/* Logo */
+.logo {
+    position: absolute;
+    top: -10px;
+    left: 20px;
+}
+
+.logo img {
+    width: 250px;
+    transition: transform 0.4s ease;
+}
+
+.logo img:hover {
+    transform: translateY(-4px); 
+}
+
+
+/* Containers */
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    height: 100vh;
+    padding: 0 40px;
+}
+
+.menu-box {
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.628);
+    width: 530px;
+    height: 450px;
+    background-color: rgba(255, 255, 255, 0.368);
+    border-radius: 24px;
+    padding: 30px;
+    color: #ffffff;
+    position: relative;
+    box-shadow: -2px -1px 13px 0px rgba(37, 37, 37, 0.541);
+    transition: transform 0.3s ease;
+}
+
+.menu-box:hover {
+    transform: translateY(-6px);
+}
+
+.receipt-box {
+    width: 380px;
+    height: 250px;
+    background-color: #ffffff;
+    border-radius: 24px;
+    padding: 30px;
+    box-shadow: -2px -1px 13px 0px rgba(37, 37, 37, 0.541);
+    transition: transform 0.3s ease;
+}
+
+.receipt-box:hover {
+    transform: translateY(-6px);
+}
+
+
+/* Menu */
+
+.menu-box h2 {
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.menu-item {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.menu-item input[type="checkbox"] {
+    margin-right: 8px;
+}
+
+.drink-divider {
+    height: 20px;
+}
+
+.logo2 {
+    position: absolute;
+    bottom: 20px;
+    left: 25px;
+    width: 50px;
+}
+
+.order-btn {
+    position: absolute;
+    bottom: 25px;
+    right: 30px;
+    background-color: #ffffff;
+    color: #000000;
+    font-weight: 700;
+    font-size: 15px;
+    padding: 8px 32px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, background-color 0.2s ease;
+}
+
+.order-btn:hover {
+    background-color: #f2f2f2;
+    transform: translateY(-2px);
+}
+
+/* Receipt (Python Displays) */
+
+#receipt-body div, 
+#receipt-body p {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+/* Navbar Styling*/
+.top-nav {
+    position: absolute;
+    top: 25px;
+    right: 35px;
+}
+
+.nav-item {
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 600;
+    text-decoration: none;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
+    transition: opacity 0.2s ease;
+}
+
+.nav-item:hover {
+    color: #ffffff;
+    opacity: 0.8;
+}
+
+.nav-item.active {
+    border-bottom: 2px solid #ffffff;
+}
+
+.nav-divider {
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 600;
+    margin: 0 10px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
+}
