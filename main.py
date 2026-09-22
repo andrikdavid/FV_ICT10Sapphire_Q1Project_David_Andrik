@@ -41,7 +41,7 @@ def generate_sku(e):
     quantity = document.getElementById("qty-input").value
     
     # Combine inputs into formatted SKU
-    # [:2] gets the first 3 characters of the string, while .upper() capitalizes the input
+    # [:3] gets the first 3 characters of the string, while .upper() capitalizes the input
     sku = f"{category}-{product[:3].upper()}-{quantity}"
     
     # Display inside the output container
